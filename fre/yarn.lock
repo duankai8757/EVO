@@ -1971,6 +1971,11 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
+fre@^1.11.6:
+  version "1.11.6"
+  resolved "http://192.168.14.11:8888/fre/-/fre-1.11.6.tgz#02b9c6f31d7a5fced3b17cfd63458b16d66214cb"
+  integrity sha512-YzkSUN7MGBlytjPNh6utVZUaoWmNDBQyhuuC17ecO/MF0PQY2CxFoY3r3sH5FrmJQxQeGFS2NB9clFXyg7v1jg==
+
 fs-minipass@^1.2.5:
   version "1.2.7"
   resolved "https://registry.npm.taobao.org/fs-minipass/download/fs-minipass-1.2.7.tgz?cache=0&sync_timestamp=1569874948455&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffs-minipass%2Fdownload%2Ffs-minipass-1.2.7.tgz#ccff8570841e7fe4265693da88936c55aed7f7c7"

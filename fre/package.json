@@ -7,9 +7,10 @@
   "module": "dist/fre-esm.js",
   "scripts": {
     "test": "jest --coverage",
-    "test-key":"jest ./test/reconcilation.test.js",
+    "test-key": "jest ./test/h.test.jsx",
     "build": "rollup -c && gzip-size dist/fre.js",
-    "format": "prettier --write \"{src,test,demo}/**/*.js\""
+    "format": "prettier --write \"{src,test,demo}/**/*.js\"",
+    "debugger": "node --inspect-brk ./node_modules/jest/bin/jest --runInBand --no-cache --no-watchman ./test/h.test.jsx"
   },
   "keywords": [],
   "author": "132yse",
@@ -37,7 +38,9 @@
     "typescript": "^3.5.2",
     "yarpm": "^0.2.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fre": "^1.11.6"
+  },
   "jest": {
     "coveragePathIgnorePatterns": [
       "<rootDir>/test/test-util.js"

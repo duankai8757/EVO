@@ -35,7 +35,7 @@ test('create JSX node with children', () => {
       </div>
     </div>
   )
-
+debugger;
   expect(divs).toStrictEqual({
     type: "div",
     key: "a",
