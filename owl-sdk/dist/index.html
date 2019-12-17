@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta http-equiv=X-UA-Compatible content="ie=edge">
+    <title>Document</title>
+    <script type=text/javascript src=/vconsole.min.js></script>
+
+
+</head>
+
+<body>
+    <ul>
+        <li>11111111</li>
+
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li><img src=tt.png></li>
+        <li><img src=tt233.png></li>
+        <li><img src=t2323t.png></li>
+        <li><img src=t2t.png></li>
+        <li><img src=t212t.png></li>
+        <li><img src=t22t.png></li>
+        <li><img src=t2223t.png></li>
+        <li><img src=t2323t.png></li>
+        <li><img src=t2ddt.png></li>
+        <li><img src=tdd2t.png></li>
+        <li><img src=t2t.png></li>
+        <li><img src=ta2t.png></li>
+        <li><img src=t2dst.png></li>
+        <li><img src=t2xdt.png></li>
+        <li><img src=t2ggt.png></li>
+        <li><img src=txvd2t.png></li>
+        <li><img src=tnn2t.png></li>
+        <li id=srcLoadError></li>
+        <li>-------------</li>
+    </ul>
+
+
+
+    <script type=text/javascript src=http://127.0.0.1:8888/test.js></script>
+
+    <script type=text/javascript src=owl-sdk-0.1.34.js?d8ecfb2a5a935212ecf4></script>
+    解决端内无法获取浏览器信息的问题(ios中无法获取详细的浏览器信版本信息）
+
+    <script>
+        var a = 1000;
+        var owlLog = null;
+
+        owlLog = window.zybLogCollect(
+            {
+                key: 'yyyy',
+                slowReqTime: 500,
+                filterErrors: ["ddd is not defined"],
+                // ignoreUrlKeyWord: "9999",
+                // isPvRatio:false,
+                // __debug:true,
+                extColumn: {
+                    test: 123,
+                    test2: 456
+                },
+                urlHelper: function (url) {
+                    //return "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                submitHook: function () {
+                    return new Promise((reslove, reject) => {
+                        setTimeout(() => {
+                            reslove({
+                                testaaaa: 44444444444444441,
+                                testbbbb: 2
+                            })
+                            // reject('error')
+                        }, 2000)
+
+                    })
+                }
+            }
+        );
+
+
+    </script>
+       <li><img src='tnn2t.png'></li>
+    </body>
+</html>
+

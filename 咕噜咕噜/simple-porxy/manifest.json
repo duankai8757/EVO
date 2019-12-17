@@ -1,0 +1,18 @@
+{
+    "author": "wxj",
+    "background": {
+      "page": "background.html"
+    },
+    "browser_action": {
+      "default_icon": "on.png",
+      "default_title": "a simple proxy crx"
+    },
+    "description": "This is a simple proxy crx",
+    "manifest_version": 2,
+    "name": "simple-proxy",
+    "short_name": "sproxy",
+    "permissions": [
+      "proxy"
+    ],
+    "version": "1.0"
+  }
