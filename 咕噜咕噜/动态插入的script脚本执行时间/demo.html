@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script src="./test3.js"></script>
+        <script>
+            (function () {
+                var getReadyForEditor = () => {
+                    console.log('test2 onload')
+                }
+                console.log('xxxxxx')
+                var editorJs = document.createElement("script")
+                editorJs.src = "./test1.js"
+                editorJs.async = false
+                // document.body.appendChild(editorJs)
+
+                var editorJs2 = document.createElement("script")
+                editorJs2.src = "./test2.js"
+                editorJs2.onload = getReadyForEditor
+                editorJs2.async = false
+                // document.body.appendChild(editorJs2)
+
+                var docFrag = document.createDocumentFragment()
+                docFrag.appendChild(editorJs)
+                docFrag.appendChild(editorJs2) // Note that this does NOT go to the DOM
+                document
+                    .head
+                    .appendChild(docFrag)
+            })()
+        </script>
+    </head>
+    <body></body>
+</html>
