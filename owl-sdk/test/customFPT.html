@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://plat-h5.cdnjtzy.com/cdn/h2@1.5.0-beta.1/h2.css" />
+</head>
+<body>
+<!-- 自定义上报 首屏 -->
+<div id="root">
+    <a id="test" href="javascript:;">自定义上报 首屏</a>
+</div>
+<script>
+  document.getElementById('test').onclick = function(){
+    throw new Error('Script error.')
+  }
+</script>
+<!-- 脚本区域 -->
+<script defer type="text/javascript">
+  var script=document.createElement("script");
+  script.type="text/javascript";
+  script.src="../dist/owl-sdk-0.1.29-beta1.js?v=223";
+  document.getElementsByTagName('head')[0].appendChild(script);
+  script.onload=function(){
+    let zyb = window.zybLogCollect({
+      key: 'ttttt',
+      __debug: true,
+      filterErrors: [
+        'Uncaught Error: Script error.'
+      ]
+      //filterErrors.html?_ijt=ntt79m9onbsrj0sehbpcjln1eg:14
+    });
+
+    setTimeout(()=>{
+      zyb.perfPush({
+        cfpt: performance.now(),
+      })
+    },100)
+  }
+</script>
+
+</body>
+</html>

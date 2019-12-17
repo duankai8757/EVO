@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,height=device-height,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Title</title>
+</head>
+
+<body>
+  <!-- 错误过滤 -->
+  <div id="root">
+    <a id="test">触发错误[Script error.]</a>
+  </div>
+  <script>
+    document.getElementById('test').onclick = function () {
+      throw new Error('Script error.')
+    }
+  </script>
+  <!-- 脚本区域 -->
+  <script defer type="text/javascript">
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "../owl-sdk-0.1.32.js?v=7";
+    document.getElementsByTagName('head')[0].appendChild(script);
+    script.onload = function () {
+      window.zybLogCollect({
+        key: 'ttttt',
+      });
+    }
+    function loadXMLDoc() {
+      var xmlhttp;
+      if (window.XMLHttpRequest) {
+        //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+        xmlhttp = new XMLHttpRequest();
+      }
+      else {
+        // IE6, IE5 浏览器执行代码
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+        }
+      }
+      xmlhttp.open("GET", "http://www.zybang.com/adx/click", true);
+      xmlhttp.send();
+    }
+
+    setTimeout(function () {
+      loadXMLDoc();
+    }, 1000)
+  </script>
+
+</body>
+
+</html>

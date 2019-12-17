@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+      window.onerror = function (e) {
+        console.log(e)
+      }
+    </script>
+</head>
+<body>
+<button onclick="call()">run test</button>
+<script>
+  var script = document.createElement("script");
+  script.type = "text/javascript",
+    script.src = "./31.js",
+    script.defer = !0,
+    document.getElementsByTagName("head")[0].appendChild(script),
+    window.zyblog = null,
+    script.onload = function () {
+      window.zyblog = window.zybLogCollect({
+        key: "5852edd8d420755586754db2472adb1d",
+        slowReqTime: 1e3,
+        filterErrors: ["Uncaught ReferenceError: NATIVE_CALLBACK is not defined",
+          "ReferenceError: Can't find variable: NATIVE_CALLBACK"],
+        urlHelper: function (e) {
+          return -1 !== e.indexOf("wk=1") ? window.location.origin + "/plat/shop-vue-wk/" : window.location
+            .origin + "/plat/shop-vue/"
+        },
+        isPvRatio: !1,
+        __debug: true,
+      })
+    }
+</script>
+<script>
+    function call(){
+      (function a(x) {
+        a()
+      })();
+    }
+</script>
+</body>
+</html>

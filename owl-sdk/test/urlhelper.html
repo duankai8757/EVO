@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root">
+    <div id="srcLoadError"></div>
+</div>
+<script defer type="text/javascript">
+  var script=document.createElement("script");
+  script.type="text/javascript";
+  script.src="../dist/owl-sdk-0.1.29-beta1.js?v=27";
+  document.getElementsByTagName('head')[0].appendChild(script);
+  script.onload=function(){
+    window.zybLogCollect({
+      key: 'ttttt',
+      filterErrors: [
+        'Uncaught Error: Script error.'
+      ],
+      urlHelper(url) {
+        return 'www.baidu.com?w=1';
+      },
+      __debug: true
+    });
+  }
+</script>
+</body>
+</html>
