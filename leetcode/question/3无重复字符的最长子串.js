@@ -14,14 +14,12 @@ var lengthOfLongestSubstring = function(s) {
   var len = 0;
   var arr = s.split("");
   arr.map(function(item) {
-    if (curr.indexOf(item) !== -1) {
-      let index = curr.indexOf(item);
-      curr.splice(0, index + 1, );
-      curr.push(item);
-    } else {
-      curr.push(item);
+    let index = curr.indexOf(item);
+    if (index !== -1) {
+      curr.splice(0, index + 1);
     }
-    len = curr.length > len ? curr.length : len;
+    curr.push(item);
+    len = Math.max(curr.length, len);
   });
   return len;
 };
