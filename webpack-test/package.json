@@ -1,0 +1,19 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "description": "webpack practice",
+  "private": true,
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "duankai",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "typescript": "^3.7.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  }
+}
