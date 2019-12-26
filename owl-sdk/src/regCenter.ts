@@ -1,9 +1,10 @@
-/* Copyright (c) 2018-2020 Zuoyebang, All rights reserved.
- * @fileoverview 数据上报主入口文件
- * @author songli   | songli@zuoyebang.com
- * @version 1.0 | 2019-02-12 | songli   // 初始版本
- * Report 是报表容器管理类，自执执行方法
- *
+/*
+ * @Author: your name
+ * @Date: 2019-07-30 21:19:29
+ * @LastEditTime: 2019-12-26 10:12:49
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \EVO\owl-sdk\src\regCenter.ts
  */
 import tools from "./base/tools";
 import config from "./base/config";

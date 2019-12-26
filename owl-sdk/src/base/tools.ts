@@ -1,8 +1,4 @@
-/* Copyright (c) 2018-2020 Zuoyebang, All rights reserved.
- * @fileoverview 工具基础类
- * @author songli   | songli@zuoyebang.com
- * @version 1.0 | 2018-10-12 | songli   // 初始版本
- */
+
 
 import config from "./config";
 import iosMt from "./iosMt";
@@ -259,9 +255,9 @@ let tools = (function() {
      * 获取当前运行环境
      */
     getJRE(urlParams) {
-      let testReg = /test[0-9]{0,5}\.suanshubang/;
-      let qaTestReg = /qatest[0-9]{0,5}\.suanshubang/;
-      let prodReg = /[a-zA-Z0-9]{0,20}\.zuoyebang/;
+      let testReg = /test[0-9]{0,5}\.xx/;
+      let qaTestReg = /qatest[0-9]{0,5}\.xx/;
+      let prodReg = /[a-zA-Z0-9]{0,20}\.xx/;
       let host = this.getHost(this.getUrl());
       if (host.length) {
         if (testReg.test(host)) {

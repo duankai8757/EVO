@@ -1,12 +1,15 @@
-/* Copyright (c) 2018-2020 Zuoyebang, All rights reserved.
- * @fileoverview 公共参数
- * @author songli   | songli@zuoyebang.com
- * @version 1.0 | 2018-10-12 | songli   // 初始版本
+/*
+ * @Author: your name
+ * @Date: 2019-07-30 21:19:29
+ * @LastEditTime : 2019-12-26 10:11:52
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \EVO\owl-sdk\src\base\config.ts
  */
 import tools from "./tools";
 
 var config = {
-  __requestUrl: "https://nlogtj.zuoyebang.cc/log/performance",
+  __requestUrl: "https://nlogtj.xx.cc/log/performance",
   __key: "",
   __submitLimit: 1,
   __slowReqTime: 800, //默认800

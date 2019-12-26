@@ -1,8 +1,4 @@
-/* Copyright (c) 2018-2020 Zuoyebang, All rights reserved.
- * @fileoverview 提交数据池管理（待提交数据先存放在数据池）
- * @author songli   | songli@zuoyebang.com
- * @version 1.0 | 2018-10-12 | songli   // 初始版本
- */
+
 import tools from "./tools";
 import config from "./config";
 
