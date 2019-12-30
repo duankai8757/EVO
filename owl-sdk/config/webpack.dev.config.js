@@ -3,6 +3,7 @@ const uglify = require("uglifyjs-webpack-plugin");
 const htmlPlugin = require("html-webpack-plugin");
 const proxy = require("http-proxy-middleware");
 const package = require("../package.json");
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer');
 let typeMap = {
   dev: "development",
   prod: "production"
@@ -50,8 +51,10 @@ module.exports = {
       },
       hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
       template: "./src/index.html" //是要打包的html模版路径和文件名称。
-    })
+    }),
+    // new BundleAnalyzerPlugin()
   ],
+    
   devServer: {
     contentBase: path.resolve(__dirname, "../dist"),
     host: "0.0.0.0",
