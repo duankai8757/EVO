@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "noImplicitAny": false,
+    "module": "commonjs", // 模块引用方式。候选值有：commonjs、amd等
+    "removeComments": false,
+    "sourceMap": false,
+    "lib": ["es2015","dom"]
+  },
+  "include": [
+    "leetcode/question/*.ts",
+  ]
+ 
+}

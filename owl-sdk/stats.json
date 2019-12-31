@@ -1,0 +1,36 @@
+
+> owl-sdk@0.1.34 build D:\WebstormProjects\EVO\owl-sdk
+> webpack --config=config/webpack.dev.config.js --prod
+
+
+D:\WebstormProjects\EVO\owl-sdk>"node"  "D:\WebstormProjects\EVO\owl-sdk\node_modules\.bin\\..\_webpack@4.41.5@webpack\bin\webpack.js" --config=config/webpack.dev.config.js --prod 
+Webpack Bundle Analyzer is started at http://127.0.0.1:8888
+Use Ctrl+C to close it
+Hash: 470599d4c9e3252ab113
+Version: webpack 4.41.5
+Time: 6698ms
+Built at: 2019-12-30 17:46:15
+                Asset      Size  Chunks                   Chunk Names
+           index.html  2.56 KiB          [emitted]        
+    owl-sdk-0.1.34.js  29.5 KiB       0  [emitted]        main
+owl-sdk-0.1.34.js.map   123 KiB       0  [emitted] [dev]  main
+Entrypoint main = owl-sdk-0.1.34.js owl-sdk-0.1.34.js.map
+ [0] ./src/base/tools.ts 18.6 KiB {0} [built]
+ [1] ./src/base/config.ts 6.98 KiB {0} [built]
+ [2] ./src/base/submitPool.ts 7.49 KiB {0} [built]
+ [3] ./src/lib/supper.ts 644 bytes {0} [built]
+ [4] ./src/lib/err.ts 8.61 KiB {0} [built]
+ [5] ./src/lib/def.ts 1.77 KiB {0} [built]
+ [6] ./src/lib/page.ts 10.7 KiB {0} [built]
+ [7] ./src/index.js 2.72 KiB {0} [built]
+ [8] ./src/base/iosMt.ts 1.25 KiB {0} [built]
+ [9] ./src/lib/fmp.ts 10.5 KiB {0} [built]
+[10] ./src/regCenter.ts 2.08 KiB {0} [built]
+[11] ./src/lib/req.ts 4.79 KiB {0} [built]
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = index.html
+    [0] ./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html 2.99 KiB {0} [built]
+    [2] (webpack)/buildin/global.js 472 bytes {0} [built]
+    [3] (webpack)/buildin/module.js 497 bytes {0} [built]
+        + 1 hidden module
