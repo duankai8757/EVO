@@ -126,7 +126,7 @@ let tools = (function() {
         ) {
           let rebuild = reBuildUrlFun(this.URLS[0]) || this.URLS[0];
           if (rebuild.indexOf("?") !== -1) {
-            console.error(`[${rebuild}] 该URL不符合规范！`);
+            console.error(`[${rebuild}] 该URL不符合规范！!`);
           }
           return rebuild.split("?")[0];
         } else {
