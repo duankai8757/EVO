@@ -10,7 +10,7 @@ import {
 } from './index'
 
 describe('h inference w/ element', () => {
-  // key
+  // key 
   h('div', { key: 1 })
   h('div', { key: 'foo' })
   expectError(h('div', { key: [] }))
